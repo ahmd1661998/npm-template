@@ -18,7 +18,7 @@ a:hover {
 /* End body */
 /* Variables */
 /* Extend */
-.hero_contents .btn, .listOrg .bottom .btn {
+.mutualDesign .btn, .listOrg .bottom .btn {
   padding: 20px;
   min-width: 250px;
   text-align: center;
@@ -31,11 +31,11 @@ a:hover {
   font-size: 1.25rem;
   border-radius: 0; }
 
-.about-npm .text-npm div:first-child .h1 {
+.mutualDesign .h1, .about-npm .text-npm div:first-child .h1 {
   font-size: 2.25rem;
   font-weight: bold; }
 
-.hero_contents .measure-wide, .about-npm .text-npm div:last-child {
+.mutualDesign .measure-wide, .about-npm .text-npm div:last-child {
   max-width: 27em;
   margin: 40px auto;
   font-size: 1rem;
@@ -45,7 +45,7 @@ header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
 
-.hero_contents, .about-npm, .listOrg {
+.mutualDesign, .about-npm, .listOrg {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
@@ -89,15 +89,17 @@ header {
         border: 1px solid #9a9a9a;
         padding: 5px 17px; }
 
+/* Mutual */
+.mutualDesign .measure-wide {
+  font-size: 1.30rem; }
+.mutualDesign .btn {
+  margin-right: 30px; }
+
 /* hero_contents */
 .hero_contents {
   background-color: rgba(232, 217, 217, 0.3); }
-  .hero_contents h1 {
+  .hero_contents .h1 {
     font-size: 5rem; }
-  .hero_contents .measure-wide {
-    font-size: 1.30rem; }
-  .hero_contents .btn {
-    margin-right: 30px; }
   .hero_contents .btn:first-child {
     background-color: #FB3B49;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2); }
@@ -150,6 +152,21 @@ header {
     .listOrg .bottom .btn:hover {
       box-shadow: none; }
 
+/* Start npm Enterprise */
+.npm-enterprise {
+  background: #000;
+  background: url("../images/cjsdqox9k0kgel1beo12x4x6e-line-final.full.png"), radial-gradient(farthest-corner ellipse, #580F0b 22%, #120707 100%);
+  color: #F1C131; }
+  .npm-enterprise .measure-wide {
+    max-width: 40em; }
+  .npm-enterprise .btn {
+    background-color: #F1C131;
+    box-shadow: 8px 8px 0 rgba(241, 193, 49, 0.2);
+    color: #000; }
+    .npm-enterprise .btn:hover {
+      box-shadow: none; }
+
+/* End Start npm Enterprise */
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
@@ -171,12 +188,12 @@ header {
       width: 15%; }
 
   /* hero_contents */
-  .hero_contents h1 {
+  .mutualDesign h1 {
     font-size: 2rem; }
-  .hero_contents .btn {
+  .mutualDesign .btn {
     margin-right: 0;
     min-width: 230px; }
-  .hero_contents .btn:first-child {
+  .mutualDesign .btn:first-child {
     margin-bottom: 30px; }
 
   /* Start about-npm */

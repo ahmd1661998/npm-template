@@ -118,11 +118,11 @@ header { // ============================================================ Lsa 3aw
         }
     }
 }
-/* hero_contents */
-.hero_contents {
-    background-color: rgba(232, 217, 217, 0.3);
+
+/* Mutual */
+.mutualDesign {
     @extend %padding;
-    h1 {font-size: 5rem;}
+    .h1 {@extend %title;}
     .measure-wide {
         @extend %paragraph;
         font-size: 1.30rem;
@@ -131,6 +131,11 @@ header { // ============================================================ Lsa 3aw
         @extend %parent-bottom;
         margin-right: 30px;
     }
+}
+/* hero_contents */
+.hero_contents {
+    background-color: rgba(232, 217, 217, 0.3);
+    .h1 {font-size: 5rem;}
     .btn:first-child {
         background-color: $mainColor-one;
         box-shadow: 8px 8px 0 rgba(251,59,73,.2);
@@ -215,6 +220,25 @@ header { // ============================================================ Lsa 3aw
     }
 }
 
+/* Start npm Enterprise */
+.npm-enterprise {
+    background: #000;
+    background: url("../images/cjsdqox9k0kgel1beo12x4x6e-line-final.full.png"),radial-gradient(farthest-corner ellipse,#580F0b 22%,#120707 100%);
+    color: #F1C131;
+    .measure-wide {
+        max-width: 40em;
+    }
+    .btn {
+        background-color: #F1C131;
+        box-shadow: 8px 8px 0 rgba(241,193,49,.2);
+        color: #000;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+/* End Start npm Enterprise */
+
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
     header nav ul:first-child,
@@ -238,7 +262,7 @@ header { // ============================================================ Lsa 3aw
         }
     }
     /* hero_contents */
-    .hero_contents {
+    .mutualDesign {
         h1 {font-size: 2rem;}
         .measure-wide {
         }
