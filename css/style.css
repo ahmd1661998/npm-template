@@ -18,9 +18,22 @@ a:hover {
 /* End body */
 /* Variables */
 /* Extend */
+.hero_contents .btn {
+  padding: 20px;
+  min-width: 250px;
+  text-align: center;
+  color: #FFF;
+  background-color: #000;
+  border: none;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  font-weight: 700;
+  transition: .25s;
+  font-size: 1.25rem;
+  border-radius: 0; }
+
 header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
-  transition: opacity .15s ease-in; }
+  transition: .15s ease-in; }
 
 /* Nesting */
 /* Start Header */
@@ -62,6 +75,33 @@ header {
         border: 1px solid #9a9a9a;
         padding: 5px 17px; }
 
+/* hero_contents */
+.hero_contents {
+  background-color: rgba(232, 217, 217, 0.3);
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .hero_contents h1 {
+    font-size: 5rem; }
+  .hero_contents .measure-wide {
+    max-width: 27em;
+    margin: 40px auto;
+    font-size: 1.30rem;
+    line-height: 1.5; }
+  .hero_contents .btn {
+    margin-right: 30px; }
+  .hero_contents .btn:first-child {
+    background-color: #FB3B49;
+    box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2); }
+    .hero_contents .btn:first-child:hover {
+      background-color: #CD0514;
+      box-shadow: none; }
+  .hero_contents .btn:last-child {
+    box-shadow: none;
+    background-color: #FFF;
+    color: #000; }
+    .hero_contents .btn:last-child:hover {
+      background-color: #F7F7F7; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
@@ -79,7 +119,16 @@ header {
     header .head .npm-logo {
       margin-left: 0; }
     header .head .btn-login {
-      width: 15%; } }
+      width: 15%; }
+
+  /* hero_contents */
+  .hero_contents h1 {
+    font-size: 2rem; }
+  .hero_contents .btn {
+    margin-right: 0;
+    min-width: 230px; }
+  .hero_contents .btn:first-child {
+    margin-bottom: 20px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */ }
 @media (min-width: 992px) and (max-width: 1199px) {

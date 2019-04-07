@@ -37,17 +37,18 @@ $font-color: #333;
     font-weight: 700;
     transition: .25s;
     font-size: 1.25rem;
+    border-radius: 0;
 }
 
 %hover {
     opacity: .4;
-    transition: opacity .15s ease-in;
+    transition: .15s ease-in;
 }
 
 /* Nesting */
 
 /* Start Header */
-header {
+header { // ============================================================ Lsa 3awz yt3dl
     border-bottom: 1px solid #d2d2d2;
     box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
     /* Navagtion */
@@ -100,6 +101,39 @@ header {
         }
     }
 }
+/* hero_contents */
+.hero_contents {
+    background-color: rgba(232, 217, 217, 0.3);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    h1 {font-size: 5rem;}
+    .measure-wide {
+        max-width: 27em;
+        margin: 40px auto;
+        font-size: 1.30rem;
+        line-height: 1.5;
+    }
+    .btn {
+        @extend %parent-bottom;
+        margin-right: 30px;
+    }
+    .btn:first-child {
+        background-color: #FB3B49;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        &:hover {
+            background-color: #CD0514;
+            box-shadow: none;
+        }
+    }
+    .btn:last-child {
+        box-shadow: none;
+        background-color: #FFF;
+        color: #000;
+        &:hover {
+            background-color: #F7F7F7;
+        }
+    }
+}
 
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
@@ -120,6 +154,19 @@ header {
         .head {
             .npm-logo {margin-left: 0;}
             .btn-login {width: 15%;}
+        }
+    }
+    /* hero_contents */
+    .hero_contents {
+        h1 {font-size: 2rem;}
+        .measure-wide {
+        }
+        .btn {
+            margin-right: 0;
+            min-width: 230px;
+        }
+        .btn:first-child {
+            margin-bottom: 20px;
         }
     }
 }
