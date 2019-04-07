@@ -31,6 +31,16 @@ a:hover {
   font-size: 1.25rem;
   border-radius: 0; }
 
+.about-npm .text-npm div:first-child .h1 {
+  font-size: 2.25rem;
+  font-weight: bold; }
+
+.hero_contents .measure-wide, .about-npm .text-npm div:last-child {
+  max-width: 27em;
+  margin: 40px auto;
+  font-size: 1rem;
+  line-height: 1.5; }
+
 header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
@@ -83,10 +93,7 @@ header {
   .hero_contents h1 {
     font-size: 5rem; }
   .hero_contents .measure-wide {
-    max-width: 27em;
-    margin: 40px auto;
-    font-size: 1.30rem;
-    line-height: 1.5; }
+    font-size: 1.30rem; }
   .hero_contents .btn {
     margin-right: 30px; }
   .hero_contents .btn:first-child {
@@ -102,11 +109,33 @@ header {
     .hero_contents .btn:last-child:hover {
       background-color: #F7F7F7; }
 
+/* Start about-npm */
+.about-npm .npm-img {
+  margin: 40px 0; }
+  .about-npm .npm-img img {
+    width: 20%; }
+.about-npm .text-npm div:first-child {
+  position: relative; }
+  .about-npm .text-npm div:first-child:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    left: 15%;
+    top: -6%;
+    background-color: rgba(255, 204, 53, 0.4);
+    transform: skew(9deg, 0deg); }
+.about-npm .text-npm div:last-child {
+  max-width: 48em;
+  margin-top: 30px; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
   header nav ul:first-child,
-  header .head .search-bar {
+  header .head .search-bar,
+  .about-npm .text-npm div:first-child:before {
     display: none; }
 
   header {
@@ -128,7 +157,15 @@ header {
     margin-right: 0;
     min-width: 230px; }
   .hero_contents .btn:first-child {
-    margin-bottom: 20px; } }
+    margin-bottom: 30px; }
+
+  /* Start about-npm */
+  .about-npm .npm-img img {
+    width: 60%; }
+  .about-npm .text-npm div:first-child .h1 {
+    font-size: 2.5rem; }
+  .about-npm .text-npm div:last-child {
+    max-width: 21em; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */ }
 @media (min-width: 992px) and (max-width: 1199px) {
