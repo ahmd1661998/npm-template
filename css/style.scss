@@ -1,0 +1,127 @@
+/*
+    Theme Name: npm
+    Theme Coder: Ahmed Osama Bedawy
+*/
+/* Start Body */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* End body */
+
+/* Variables */
+$mainColor-one: #FB3B49;
+$background-color: #F8F4F4;
+$font-color: #333;
+
+/* Extend */
+%parent-bottom {
+    padding: 20px;
+    min-width: 250px;
+    text-align: center;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+    font-weight: 700;
+    transition: .25s;
+    font-size: 1.25rem;
+}
+
+%hover {
+    opacity: .4;
+    transition: opacity .15s ease-in;
+}
+
+/* Nesting */
+
+/* Start Header */
+header {
+    border-bottom: 1px solid #d2d2d2;
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+    /* Navagtion */
+    nav {
+        border-width: 3px 0 0;
+        border-top-style: solid;
+        border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+        .nav-link {
+            color: #000;
+            &:hover {
+                @extend %hover;
+            }
+        }
+    }
+    /* Search-bar and Login */
+    .head {
+        margin-top: -15px;
+        border-top: 1px solid rgba(0,0,0,.1);
+        .npm-logo {
+            margin: 10px 0 0 20px;
+            svg {width: 70px;}
+        }
+        .search-bar {
+            width: 80%;
+            .input-group-text, .form-control, .btn-outline-secondary {
+                border: none;
+                background-color: rgba(0,0,0,.05);
+                border-radius: 0;
+            }
+            .btn-outline-secondary {
+                background-color: #fb3e44;
+                color: #FFF;
+            }
+        }
+        .btn-login {
+            margin-top: 8px;
+            > a {
+                color: rgba(0,0,0,.7);
+                margin-right: 15px;
+                font-weight: bold;
+                font-size: .875rem;
+                &:hover {
+                    @extend %hover;
+                }
+            }
+            a:first-child {
+                border: 1px solid #9a9a9a;
+                padding: 5px 17px;
+            }
+        }
+    }
+}
+
+/* media Quiary */
+@media (max-width: 767px) { /* Mobile & Tablet Rules */
+    header nav ul:first-child,
+    header .head .search-bar {
+        display: none;
+    }
+    header {
+        /* Navagtion */
+        nav {
+            ul:last-child {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        /* Search-bar and Login */
+        .head {
+            .npm-logo {margin-left: 0;}
+            .btn-login {width: 15%;}
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */}
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */}

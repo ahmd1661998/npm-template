@@ -1,0 +1,88 @@
+/*
+    Theme Name: npm
+    Theme Coder: Ahmed Osama Bedawy
+*/
+/* Start Body */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+a:hover {
+  text-decoration: none; }
+
+/* End body */
+/* Variables */
+/* Extend */
+header nav .nav-link:hover, header .head .btn-login > a:hover {
+  opacity: .4;
+  transition: opacity .15s ease-in; }
+
+/* Nesting */
+/* Start Header */
+header {
+  border-bottom: 1px solid #d2d2d2;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  /* Navagtion */
+  /* Search-bar and Login */ }
+  header nav {
+    border-width: 3px 0 0;
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3; }
+    header nav .nav-link {
+      color: #000; }
+  header .head {
+    margin-top: -15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    header .head .npm-logo {
+      margin: 10px 0 0 20px; }
+      header .head .npm-logo svg {
+        width: 70px; }
+    header .head .search-bar {
+      width: 80%; }
+      header .head .search-bar .input-group-text, header .head .search-bar .form-control, header .head .search-bar .btn-outline-secondary {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 0; }
+      header .head .search-bar .btn-outline-secondary {
+        background-color: #fb3e44;
+        color: #FFF; }
+    header .head .btn-login {
+      margin-top: 8px; }
+      header .head .btn-login > a {
+        color: rgba(0, 0, 0, 0.7);
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: .875rem; }
+      header .head .btn-login a:first-child {
+        border: 1px solid #9a9a9a;
+        padding: 5px 17px; }
+
+/* media Quiary */
+@media (max-width: 767px) {
+  /* Mobile & Tablet Rules */
+  header nav ul:first-child,
+  header .head .search-bar {
+    display: none; }
+
+  header {
+    /* Navagtion */
+    /* Search-bar and Login */ }
+    header nav ul:last-child {
+      display: block;
+      margin: 0 auto;
+      text-align: center; }
+    header .head .npm-logo {
+      margin-left: 0; }
+    header .head .btn-login {
+      width: 15%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Small Screen Rules */ }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Medium Screen Rules */ }
+
+/*# sourceMappingURL=style.css.map */
