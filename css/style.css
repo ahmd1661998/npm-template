@@ -18,7 +18,7 @@ a:hover {
 /* End body */
 /* Variables */
 /* Extend */
-.hero_contents .btn {
+.hero_contents .btn, .listOrg .bottom .btn {
   padding: 20px;
   min-width: 250px;
   text-align: center;
@@ -44,6 +44,10 @@ a:hover {
 header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
+
+.hero_contents, .about-npm, .listOrg {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 /* Nesting */
 /* Start Header */
@@ -72,7 +76,7 @@ header {
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 0; }
       header .head .search-bar .btn-outline-secondary {
-        background-color: #fb3e44;
+        background-color: #FB3B49;
         color: #FFF; }
     header .head .btn-login {
       margin-top: 8px; }
@@ -87,9 +91,7 @@ header {
 
 /* hero_contents */
 .hero_contents {
-  background-color: rgba(232, 217, 217, 0.3);
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  background-color: rgba(232, 217, 217, 0.3); }
   .hero_contents h1 {
     font-size: 5rem; }
   .hero_contents .measure-wide {
@@ -119,16 +121,34 @@ header {
   .about-npm .text-npm div:first-child:before {
     content: "";
     position: absolute;
-    width: 70%;
+    width: 85%;
     height: 100%;
     z-index: -1;
-    left: 15%;
+    left: 7%;
     top: -6%;
     background-color: rgba(255, 204, 53, 0.4);
     transform: skew(9deg, 0deg); }
 .about-npm .text-npm div:last-child {
   max-width: 48em;
   margin-top: 30px; }
+
+/* list */
+.listOrg .card-deck .card {
+  border: none; }
+  .listOrg .card-deck .card .card-img-top {
+    height: 2rem;
+    width: 80px; }
+  .listOrg .card-deck .card .card-title {
+    color: #FB3B49;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1rem; }
+.listOrg .bottom {
+  margin-top: 40px; }
+  .listOrg .bottom .btn {
+    min-width: 300px; }
+    .listOrg .bottom .btn:hover {
+      box-shadow: none; }
 
 /* media Quiary */
 @media (max-width: 767px) {

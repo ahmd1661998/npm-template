@@ -57,6 +57,11 @@ $font-color: #333;
     transition: .15s ease-in;
 }
 
+%padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 /* Nesting */
 
 /* Start Header */
@@ -91,7 +96,7 @@ header { // ============================================================ Lsa 3aw
                 border-radius: 0;
             }
             .btn-outline-secondary {
-                background-color: #fb3e44;
+                background-color: $mainColor-one;
                 color: #FFF;
             }
         }
@@ -116,8 +121,7 @@ header { // ============================================================ Lsa 3aw
 /* hero_contents */
 .hero_contents {
     background-color: rgba(232, 217, 217, 0.3);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    @extend %padding;
     h1 {font-size: 5rem;}
     .measure-wide {
         @extend %paragraph;
@@ -128,7 +132,7 @@ header { // ============================================================ Lsa 3aw
         margin-right: 30px;
     }
     .btn:first-child {
-        background-color: #FB3B49;
+        background-color: $mainColor-one;
         box-shadow: 8px 8px 0 rgba(251,59,73,.2);
         &:hover {
             background-color: #CD0514;
@@ -147,6 +151,7 @@ header { // ============================================================ Lsa 3aw
 
 /* Start about-npm */
 .about-npm {
+    @extend %padding;
     .npm-img {
         margin: 40px 0;
         img {
@@ -159,10 +164,10 @@ header { // ============================================================ Lsa 3aw
             &:before {
                 content: "";
                 position: absolute;
-                width: 70%;
+                width: 85%;
                 height: 100%;
                 z-index: -1;
-                left: 15%;
+                left: 7%;
                 top: -6%;
                 background-color: rgba(255,204,53,.4);
                 transform: skew(9deg,0deg);
@@ -176,6 +181,36 @@ header { // ============================================================ Lsa 3aw
             @extend %paragraph;
             max-width: 48em;
             margin-top: 30px;
+        }
+    }
+}
+
+/* list */
+.listOrg {
+    @extend %padding;
+    .card-deck {
+        .card {
+            border: none;
+            .card-img-top {
+                height: 2rem;
+                width: 80px;
+            }
+            .card-title {
+                color: $mainColor-one;
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 40px;
+        .btn {
+            @extend %parent-bottom;
+            min-width: 300px;
+            &:hover {
+                box-shadow: none;
+            }
         }
     }
 }
