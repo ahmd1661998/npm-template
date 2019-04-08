@@ -31,7 +31,7 @@ a:hover {
   font-size: 1.25rem;
   border-radius: 0; }
 
-.mutualDesign .h1, .about-npm .text-npm div:first-child .h1 {
+.mutualDesign .h1, .about-npm .text-npm div:first-child .h1, .customer-serving .title h5 {
   font-size: 2.25rem;
   font-weight: bold; }
 
@@ -45,7 +45,7 @@ header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
 
-.mutualDesign, .about-npm, .listOrg {
+.mutualDesign, .about-npm, .listOrg, .customer-serving, .customer-serving .title {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
@@ -188,6 +188,14 @@ header {
     .nterprise-list .card .card-title {
       color: #580F0b !important; }
 
+/* Start customer Serving */
+.customer-serving p:first-child {
+  padding-bottom: 25px; }
+.customer-serving .responsive-img {
+  max-width: 100%;
+  padding-bottom: 4rem;
+  text-align: center; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
@@ -223,7 +231,13 @@ header {
   .about-npm .text-npm div:first-child .h1 {
     font-size: 2.5rem; }
   .about-npm .text-npm div:last-child {
-    max-width: 21em; } }
+    max-width: 21em; }
+
+  /* Start customer Serving */
+  .customer-serving h5 {
+    font-size: 2.5rem; }
+  .customer-serving p:last-child {
+    padding-bottom: 30px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */ }
 @media (min-width: 992px) and (max-width: 1199px) {

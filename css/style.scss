@@ -271,6 +271,25 @@ header { // ============================================================ Lsa 3aw
     //clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
 }
 
+/* Start customer Serving */
+.customer-serving {
+    @extend %padding;
+    .title {
+        @extend %padding;
+        h5 {
+            @extend %title;
+        }
+    }
+    p:first-child {
+        padding-bottom: 25px;
+    }
+    .responsive-img {
+        max-width: 100%;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+}
+
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
     header nav ul:first-child,
@@ -316,6 +335,15 @@ header { // ============================================================ Lsa 3aw
             div:last-child {
                 max-width: 21em;
             }
+        }
+    }
+    /* Start customer Serving */
+    .customer-serving {
+        h5 {
+            font-size: 2.5rem;
+        }
+        p:last-child {
+            padding-bottom: 30px;
         }
     }
 }
