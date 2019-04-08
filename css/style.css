@@ -31,11 +31,11 @@ a:hover {
   font-size: 1.25rem;
   border-radius: 0; }
 
-.mutualDesign .h1, .about-npm .text-npm div:first-child .h1, .customer-serving .title h5 {
+.mutualDesign .h1, .about-npm .text-npm div:first-child .h1, .customer-serving .title h5, .npm-news .title h5 {
   font-size: 2.25rem;
   font-weight: bold; }
 
-.mutualDesign .measure-wide, .about-npm .text-npm div:last-child {
+.mutualDesign .measure-wide, .about-npm .text-npm div:last-child, .npm-news .card-news .card .card-body .card-text {
   max-width: 27em;
   margin: 40px auto;
   font-size: 1rem;
@@ -45,7 +45,7 @@ header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
 
-.mutualDesign, .about-npm, .listOrg, .customer-serving, .customer-serving .title {
+.mutualDesign, .about-npm, .listOrg, .customer-serving, .customer-serving .title, .npm-news, .npm-news .title {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
@@ -196,6 +196,23 @@ header {
   padding-bottom: 4rem;
   text-align: center; }
 
+/* Start npm news */
+.npm-news {
+  background-color: #F8F4F4; }
+  .npm-news .card-news .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem; }
+    .npm-news .card-news .card .card-body {
+      border: 1px solid #ffdfdf;
+      padding: 2rem 4rem; }
+      .npm-news .card-news .card .card-body h5 {
+        font-weight: bold;
+        color: #FB3B49; }
+      .npm-news .card-news .card .card-body .card-text {
+        color: #333; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
@@ -237,7 +254,11 @@ header {
   .customer-serving h5 {
     font-size: 2.5rem; }
   .customer-serving p:last-child {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+
+  /* Start npm news */
+  .npm-news .card-news .card:first-child {
+    margin-bottom: 25px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */ }
 @media (min-width: 992px) and (max-width: 1199px) {

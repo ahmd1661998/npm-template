@@ -289,6 +289,35 @@ header { // ============================================================ Lsa 3aw
         text-align: center;
     }
 }
+/* Start npm news */
+.npm-news {
+    background-color: #F8F4F4;
+    @extend %padding;
+    .title {
+        @extend %padding;
+        h5 {@extend %title;}
+    }
+    .card-news {
+        .card {
+            border: none;
+            border-radius: 0;
+            box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+            padding: 1rem 2rem;
+            .card-body {
+                border: 1px solid #ffdfdf;
+                padding: 2rem 4rem;
+                h5 {
+                    font-weight: bold;
+                    color: $mainColor-one;
+                }
+                .card-text {
+                    @extend %paragraph;
+                    color: $font-color;
+                }
+            }
+        }
+    }
+}
 
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
@@ -344,6 +373,14 @@ header { // ============================================================ Lsa 3aw
         }
         p:last-child {
             padding-bottom: 30px;
+        }
+    }
+    /* Start npm news */
+    .npm-news {
+        .card-news {
+            .card:first-child {
+                margin-bottom: 25px;
+            }
         }
     }
 }
