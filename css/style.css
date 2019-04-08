@@ -166,7 +166,28 @@ header {
     .npm-enterprise .btn:hover {
       box-shadow: none; }
 
-/* End Start npm Enterprise */
+/* Start nterprise-grade */
+.nterprise-grade {
+  background-color: #FDFBF7; }
+  .nterprise-grade .npm-img {
+    margin-bottom: 40px; }
+    .nterprise-grade .npm-img img {
+      width: 20%; }
+  .nterprise-grade .text-npm h4 {
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 82, 40, 0.2); }
+  .nterprise-grade .text-npm .measure-wide {
+    max-width: 48em;
+    font-size: 1rem; }
+
+.nterprise-list {
+  padding-top: 0;
+  background-color: #FDFBF7; }
+  .nterprise-list .card {
+    background-color: #FDFBF7; }
+    .nterprise-list .card .card-title {
+      color: #580F0b !important; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */

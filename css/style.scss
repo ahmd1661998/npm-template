@@ -237,7 +237,39 @@ header { // ============================================================ Lsa 3aw
         }
     }
 }
-/* End Start npm Enterprise */
+
+/* Start nterprise-grade */
+.nterprise-grade {
+    background-color:#FDFBF7;
+    .npm-img {
+        margin-bottom: 40px;
+        img {
+            width: 20%;
+        }
+    }
+    .text-npm {
+        h4 {
+            text-decoration: underline;
+            text-decoration-color: rgba(251,82,40,.2)
+        }
+        .measure-wide {
+            max-width: 48em;
+            font-size: 1rem;
+        }
+    }
+}
+.nterprise-list {
+    padding-top: 0;
+    //padding-bottom: 15%;
+    background-color:#FDFBF7;
+    .card {
+        background-color: #FDFBF7;
+        .card-title {
+            color: #580F0b !important;
+        }
+    }
+    //clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
+}
 
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
@@ -264,8 +296,6 @@ header { // ============================================================ Lsa 3aw
     /* hero_contents */
     .mutualDesign {
         h1 {font-size: 2rem;}
-        .measure-wide {
-        }
         .btn {
             margin-right: 0;
             min-width: 230px;
@@ -277,8 +307,7 @@ header { // ============================================================ Lsa 3aw
     /* Start about-npm */
     .about-npm {
         .npm-img {
-            img {
-                width: 60%;}
+            img {width: 60%;}
         }
         .text-npm {
             div:first-child {
