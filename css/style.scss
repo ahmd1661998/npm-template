@@ -318,6 +318,27 @@ header { // ============================================================ Lsa 3aw
         }
     }
 }
+/* Start create account */
+.create-account {
+    @extend %padding;
+    .title {
+        h5 {@extend %title;}
+    }
+}
+/* Start Footer */
+footer {
+    @extend %padding;
+    h5 {
+        font-weight: bold;
+        color: $mainColor-one;
+    }
+    a {
+        color: rgba(0, 0, 0, .7);
+        &:hover {
+            color: #cb3837;
+        }
+    }
+}
 
 /* media Quiary */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
@@ -381,6 +402,12 @@ header { // ============================================================ Lsa 3aw
             .card:first-child {
                 margin-bottom: 25px;
             }
+        }
+    }
+    /* Start Footer */
+    footer {
+        .margin:not(:last-child) {
+            margin-bottom: 40px;
         }
     }
 }

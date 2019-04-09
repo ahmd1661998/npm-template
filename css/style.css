@@ -31,7 +31,7 @@ a:hover {
   font-size: 1.25rem;
   border-radius: 0; }
 
-.mutualDesign .h1, .about-npm .text-npm div:first-child .h1, .customer-serving .title h5, .npm-news .title h5 {
+.mutualDesign .h1, .about-npm .text-npm div:first-child .h1, .customer-serving .title h5, .npm-news .title h5, .create-account .title h5 {
   font-size: 2.25rem;
   font-weight: bold; }
 
@@ -45,7 +45,7 @@ header nav .nav-link:hover, header .head .btn-login > a:hover {
   opacity: .4;
   transition: .15s ease-in; }
 
-.mutualDesign, .about-npm, .listOrg, .customer-serving, .customer-serving .title, .npm-news, .npm-news .title {
+.mutualDesign, .about-npm, .listOrg, .customer-serving, .customer-serving .title, .npm-news, .npm-news .title, .create-account, footer {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
@@ -213,6 +213,16 @@ header {
       .npm-news .card-news .card .card-body .card-text {
         color: #333; }
 
+/* Start create account */
+/* Start Footer */
+footer h5 {
+  font-weight: bold;
+  color: #FB3B49; }
+footer a {
+  color: rgba(0, 0, 0, 0.7); }
+  footer a:hover {
+    color: #cb3837; }
+
 /* media Quiary */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
@@ -258,7 +268,11 @@ header {
 
   /* Start npm news */
   .npm-news .card-news .card:first-child {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+
+  /* Start Footer */
+  footer .margin:not(:last-child) {
+    margin-bottom: 40px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */ }
 @media (min-width: 992px) and (max-width: 1199px) {
