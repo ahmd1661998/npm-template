@@ -1,0 +1,200 @@
+/* Mutual */
+.mutualProperty {
+    .measure-wide {
+        @include paragraph(27em ,1.30rem);
+    }
+    .btn {
+        @include parent-bottom (250px);
+        @include margin($right: 30px);
+    }
+    @media #{$maxMobile} {
+        h1 {font-size: 2rem;}
+        .btn {
+            @include margin($right: 0);
+            min-width: 230px;
+        }
+    }
+}
+
+/* hero_contents */
+.hero_contents {
+    background-color: rgba(232, 217, 217, 0.3);
+    .h1 {font-size: 5rem;}
+    .btn:first-child {
+        background-color: $mainColor-one;
+        box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+        &:hover {
+            background-color: $mainColor-one;
+            box-shadow: none;
+        }
+    }
+    .btn:last-child {
+        box-shadow: none;
+        background-color: $color-white;
+        color: $color-black;
+        &:hover {background-color: $background-color;}
+    }
+    @media #{$maxMobile} {
+        .btn:first-child {@include margin($bottom: 30px);}
+    }
+}
+
+/* Start about-npm */
+.about-npm {
+    .npm-img {
+        @include margin($top: 40px, $bottom: 40px);
+        img {width: 20%;}
+    }
+    .text-npm {
+        div:first-child {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 85%;
+                height: 100%;
+                z-index: -1;
+                left: 7%;
+                top: -6%;
+                background-color: rgba(255,204,53,.4);
+                transform: skew(9deg,0deg);
+            }
+        }
+
+        div:last-child {
+            @include paragraph (48em, 1rem);
+            @include margin ($top: 30px);
+        }
+    }
+    @media #{$maxMobile} {
+        .npm-img {
+            img {width: 60%;}
+        }
+        .text-npm {
+            div:first-child {
+                .h1 {font-size: 2.5rem;}
+                &:before {display: none;}
+            }
+            div:last-child {
+                max-width: 21em;
+            }
+        }
+    }
+}
+/* list */
+.listOrg {
+    .card-deck {
+        .card {
+            border: none;
+            .card-img-top {
+                @include size-img(80px, 2rem);
+            }
+            .card-title {
+                color: $mainColor-one;
+                @include margin ($bottom: 20px);
+                font-size: 1rem;
+            }
+        }
+    }
+    .bottom {
+        @include margin ($top: 40px);
+        .btn {
+            @include parent-bottom (300px);
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+/* Start npm Enterprise */
+.npm-enterprise {
+    background: $color-black;
+    background: url("../images/cjsdqox9k0kgel1beo12x4x6e-line-final.full.png"),radial-gradient(farthest-corner ellipse,#580F0b 22%,#120707 100%);
+    color: $another-color;
+    .measure-wide {
+        max-width: 40em;
+    }
+    .btn {
+        background-color: $another-color;
+        box-shadow: 8px 8px 0 rgba(241,193,49,.2);
+        color: $color-black;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
+/* Start nterprise-grade */
+.nterprise-grade {
+    background-color: $background-color;
+    .npm-img {
+        @include margin($bottom: 40px);
+        img {
+            width: 20%;
+        }
+    }
+    .text-npm {
+        h4 {
+            text-decoration: underline;
+            text-decoration-color: rgba(251,82,40,.2)
+        }
+        .measure-wide {
+            @include paragraph(48em, 1rem);
+        }
+    }
+}
+.nterprise-list {
+    @include padding($top: 0);
+    background-color:$background-color;
+    .card {
+        background-color: $background-color;
+        .card-title {
+            color: #580F0b !important;
+        }
+    }
+}
+/* Start customer Serving */
+.customer-serving {
+    p:first-child {
+        @include padding ($bottom: 25px);
+    }
+    .responsive-img {
+        max-width: 100%;
+        @include padding ($bottom: 4rem);
+        text-align: center;
+    }
+    @media #{$maxMobile} {
+        h5 {
+            font-size: 2.5rem;
+        }
+        p:last-child {
+            @include padding ($bottom: 30px);
+        }
+    }
+}
+/* Start npm news */
+.npm-news {
+    background-color: $background-color;
+    .card-news {
+        .card {
+            border: none;
+            border-radius: 0;
+            box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+            @include padding (1rem, 2rem, 1rem, 2rem);
+            .card-body {
+                border: 1px solid #ffdfdf;
+                @include padding (2rem, 4rem, 2rem, 4rem);
+                h5 {color: $mainColor-one;}
+                .card-text {color: $font-color;}
+            }
+        }
+    }
+    @media #{$maxMobile} {
+        .card-news {
+            .card:first-child {
+                @include margin($bottom: 25px);
+            }
+        }
+    }
+}

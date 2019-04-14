@@ -1,0 +1,43 @@
+header {
+    border-bottom: 1px solid #d2d2d2;
+    box-shadow: 0 4px 13px -3px rgba($color-black, 0.10196);
+    @include padding($bottom: 15px);
+    .head {
+        .row {margin-right: 0;}
+        @include padding($top: 15px);
+        border-top: 1px solid rgba($color-black, .1);
+        .npm-logo {
+            @include padding($top: 10px, $left: 30px);
+            svg {width: 70px;}
+            @media #{$maxMobile} {
+                @include margin($bottom: 20px);
+            }
+        }
+        .search-bar {
+            .input-group-text, .form-control, .btn-outline-secondary {
+                border: none;
+                background-color: rgba($color-black, .05);
+                border-radius: 0;
+            }
+            .btn-outline-secondary {
+                background-color: $mainColor-one;
+                color: $color-white;
+            }
+        }
+        .btn-login {
+            @include padding($bottom: 8px);
+            > a {
+                color: rgba($color-black ,.7);
+                @include margin($right: 15px);
+                @include title(.875rem, bold);
+                &:hover {
+                    @include hover;
+                }
+            }
+            :first-child {
+                border: 1px solid #9a9a9a;
+                @include padding(5px, 20px, 5px, 20px);
+            }
+        }
+    }
+}

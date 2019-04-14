@@ -1,0 +1,78 @@
+/*
+*
+**Prefixes Mixin
+*
+*/
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+/*
+*
+** Hover
+*
+*/
+@mixin hover {
+    opacity: .4;
+    transition: .15s ease-in;
+}
+
+/*
+*
+** padding
+*
+*/
+@mixin padding ($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+/*
+*
+** margin
+*
+*/
+@mixin margin ($top: null, $right: null, $bottom: null, $left: null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+/*
+*
+** title
+*
+*/
+@mixin title($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+/*
+*
+** title
+*
+*/
+@mixin size-img ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*
+*
+** paragraph
+*
+*/
+@mixin paragraph($max-width, $font-size) {
+    max-width: $max-width;
+    margin: 40px auto;
+    font-size: $font-size;
+    line-height: 1.5;
+}

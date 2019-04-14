@@ -1,0 +1,18 @@
+/* Color Of Page */
+$mainColor-one: #FB3B49;
+$background-color: #F8F4F4;
+$font-color: #333;
+$color-black: #000;
+$color-white: #FFF;
+$another-color: #F1C131;
+
+/*
+*
+*** Media Quariy
+*
+*/
+$maxMobile: "(max-width: 767px)"; // EX >> @media #{$mobileRules}
+$maxSmall: "(max-width: 991px)";
+$minSmall: "(min-width: 768px)";
+$minMedium: "(min-width: 992px)";
+$minLarge: "(min-width: 1200px)";

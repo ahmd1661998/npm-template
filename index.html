@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>npm</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
     <![endif]-->
@@ -18,57 +18,67 @@
 <body role="document">
     <!-- Start Header -->
     <header>
-        <!-- Navagtion -->
-        <nav class="d-flex bd-highlight mb-3">
-            <ul class="nav mr-auto p-2 bd-highlight">
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Natural Potato Magnet</a></li>
-            </ul>
-            <ul class="nav p-2 bd-highlight">
-                <li class="nav-item"><a role="link" class="nav-link" href="#">npm Enterprise</a></li>
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Products</a></li>
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Solutions</a></li>
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Resources</a></li>
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Docs</a></li>
-                <li class="nav-item"><a role="link" class="nav-link" href="#">Support</a></li>
-            </ul>
+        <!-- Start Navagtion -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Natural Potato Magnet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a role="link" class="nav-link" href="#">npm Enterprise <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a role="link" class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a role="link" class="nav-link" href="#">Solutions</a></li>
+                    <li class="nav-item"><a role="link" class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a role="link" class="nav-link" href="#">Docs</a></li>
+                    <li class="nav-item"><a role="link" class="nav-link" href="#">Support</a></li>
+                </ul>
+            </div>
         </nav>
-        <!-- Search-bar and Login -->
-        <section class="head d-flex bd-highlight">
-            <div class="npm-logo p-2 flex-fill bd-highlight">
-                <a href="#">
-                    <svg viewBox="0 0 780 250">
-                        <path fill="#231F20"
-                            d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-            <div class="search-bar input-group mb-3 p-2 flex-fill bd-highlight">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search fa-1x"></i>
-                    </span>
+        <!-- Start Navagtion -->
+
+        <section class="head">
+            <div class="row">
+                <div class="col-lg-1 col-6 npm-logo">
+                    <a href="#">
+                        <svg viewBox="0 0 780 250">
+                            <path fill="#231F20"
+                                d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
-                <input type="search" class="form-control" placeholder="Search packages" aria-label="Search packages"
-                    aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+                <div class="col-lg-9 col-12 order-lg-2 order-3 input-group search-bar">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa fa-search fa-1x"></i>
+                        </span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search packages" aria-label="Search packages"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+                    </div>
                 </div>
-            </div>
-            <div class="btn-login p-2 flex-fill bd-highlight">
-                <a href="#">Join</a>
-                <a href="#">Log In</a>
+                <div class="col-lg-2 col-6 order-lg-3 order-2 btn-login ">
+                    <a href="#">Join</a>
+                    <a href="#">Log In</a>
+                </div>
             </div>
         </section>
     </header>
     <!-- End Header -->
+
     <!-- Start Content -->
     <main>
         <!-- Start hero_contents -->
-        <section class="hero_contents text-center mutualDesign">
+        <section class="hero_contents text-center mutualProperty padding">
             <div class="container">
-                <h1 class="h1 font-weight-bolder">Build amazing things</h1>
+                <h1 class="h1 title">Build amazing things</h1>
                 <div class="measure-wide">
-                    <p class="text-center text-justify">Essential JavaScript development tools that help you go to
+                    <p class="paragraph text-center text-justify">Essential JavaScript development tools that help you
+                        go to
                         market faster and build powerful applications using modern open source code.</p>
                 </div>
                 <div>
@@ -80,7 +90,7 @@
         <!-- Start hero_contents -->
 
         <!-- Start about-npm -->
-        <section class="about-npm">
+        <section class="about-npm padding">
             <div class="container">
                 <div class="npm-img">
                     <img class="rounded mx-auto d-block" src="images/cjsdu27d721czsp74i05n4iey-best-open.svg"
@@ -88,7 +98,7 @@
                 </div>
                 <div class="text-npm text-center">
                     <div>
-                        <h2 class="h1">Bring the best of open source to your company</h2>
+                        <h2 class="h1 title">Bring the best of open source to your company</h2>
                     </div>
                     <div class="text-center text-justify">
                         <p>npm is the tool used by over 11,000,000 JavaScript developers around the world. Your
@@ -101,14 +111,14 @@
         <!-- End about-npm -->
 
         <!-- Start list -->
-        <section class="listOrg">
+        <section class="listOrg padding">
             <div class="container">
                 <div class="card-deck listOrg">
                     <div class="card">
                         <img src="images/cjsdu28lz00nmph74dpr1pju0-zero-configuration.svg" class="card-img-top"
                             alt="configuration">
                         <div class="card-body">
-                            <h5 class="card-title">Zero configuration</h5>
+                            <h5 class="card-title font-weight-bolder">Zero configuration</h5>
                             <p class="card-text">Create an org, add your team, and start collaborating. Nothing to
                                 configure, set up, or manage.</p>
                         </div>
@@ -117,7 +127,7 @@
                         <img src="images/cjsdu28r921djsp74bnt4i9t5-team-management.svg" class="card-img-top"
                             alt="team management">
                         <div class="card-body">
-                            <h5 class="card-title">Team management</h5>
+                            <h5 class="card-title font-weight-bolder">Team management</h5>
                             <p class="card-text">Control who has access to what modules within your team namespace using
                                 straightforward team management capabilities.</p>
                         </div>
@@ -126,7 +136,7 @@
                         <img src="images/cjsdu27ac21d4u674dz9uoaoq-feature-parity.svg" class="card-img-top"
                             alt="feature parity">
                         <div class="card-body">
-                            <h5 class="card-title">Familiar features</h5>
+                            <h5 class="card-title font-weight-bolder">Familiar features</h5>
                             <p class="card-text">npm Orgs has 100% parity with all the public npm registry features your
                                 developers already use.</p>
                         </div>
@@ -134,7 +144,7 @@
                     <div class="card">
                         <img src="images/cjsdu28xd21her174xt02voit-npm-audit.svg" class="card-img-top" alt="npm audit">
                         <div class="card-body">
-                            <h5 class="card-title">npm audit</h5>
+                            <h5 class="card-title font-weight-bolder">npm audit</h5>
                             <p class="card-text">Enjoy the security auditing features built into the npm client, a
                                 zero-friction way to make open source software safer.</p>
                         </div>
@@ -147,9 +157,9 @@
         </section>
         <!-- End list -->
         <!-- Start npm Enterprise -->
-        <section class="npm-enterprise mutualDesign text-center">
+        <section class="npm-enterprise mutualProperty text-center padding">
             <div class="container">
-                <h3 class="h1 font-weight-bolder">npm Enterprise</h3>
+                <h3 class="h1 title font-weight-bolder">npm Enterprise</h3>
                 <div class="measure-wide">
                     <p class="text-center text-justify">You need to get quality products to market fast but you also
                         need enterprise-grade security and compliance. Speed up development while also upgrading to the
@@ -161,7 +171,7 @@
         <!-- End npm Enterprise -->
 
         <!-- start Enterprise grade -->
-        <section class="nterprise-grade mutualDesign">
+        <section class="nterprise-grade mutualProperty padding">
             <div class="container">
                 <div class="npm-img">
                     <img class="rounded mx-auto d-block" src="images/cjsbzwq57u0jxtc74vglc8ff9-gak-only.full.png"
@@ -169,7 +179,7 @@
                 </div>
                 <div class="text-npm text-center">
                     <div>
-                        <h4 class="h1 font-weight-bolder">JavaScript. Enterprise grade.</h4>
+                        <h4 class="h1 title font-weight-bolder">JavaScript. Enterprise grade.</h4>
                     </div>
                     <div class="measure-wide">
                         <p class="text-center text-justify">Bring your development under one roof, and get a handle on
@@ -181,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <section class="nterprise-list listOrg">
+        <section class="nterprise-list padding listOrg">
             <div class="container">
                 <div class="card-deck listOrg">
                     <div class="card">
@@ -233,10 +243,10 @@
         <!-- End Enterprise grade-->
 
         <!-- Start customer Serving  -->
-        <section class="customer-serving">
+        <section class="customer-serving padding">
             <div class="container">
-                <div class="title text-center">
-                    <h5 class="h1">Serving 500 of the Fortune 500 (and everyone else)</h5>
+                <div class="title padding text-center">
+                    <h5 class="h1 title">Serving 500 of the Fortune 500 (and everyone else)</h5>
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-lg-4 col-sm-12 col-md-12">
@@ -288,19 +298,19 @@
         </section>
         <!-- End customer Serving  -->
         <!-- Start npm news -->
-        <section class="npm-news">
+        <section class="npm-news padding">
             <div class="container">
-                <div class="title text-center">
-                    <h5 class="h1">npm news</h5>
+                <div class="title padding text-center">
+                    <h5 class="h1 title">npm news</h5>
                 </div>
                 <div class="row card-news justify-content-between">
                     <div class="col-lg-5 col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <a href="#">
-                                    <h5 class="card-title">&lt; our most recent press release &gt;</h5>
+                                    <h5 class="card-title font-weight-bolder">&lt; our most recent press release &gt;</h5>
                                 </a>
-                                <p class="card-text">npm, Inc., the open source JavaScript developer tools provider and
+                                <p class="card-text padding">npm, Inc., the open source JavaScript developer tools provider and
                                     operator of the world’s largest software registry, today announced npm Enterprise
                                     ...</p>
                             </div>
@@ -310,9 +320,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <a href="#">
-                                    <h5 class="card-title">&lt;our most recent blog post &gt;</h5>
+                                    <h5 class="card-title font-weight-bolder">&lt;our most recent blog post &gt;</h5>
                                 </a>
-                                <p class="card-text">When I ask software developers what their biggest security concerns
+                                <p class="card-text padding">When I ask software developers what their biggest security concerns
                                     are, I typically hear something about malicious code in ...</p>
                             </div>
                         </div>
@@ -322,10 +332,10 @@
         </section>
         <!-- End npm news -->
         <!-- Start create account -->
-        <section class="create-account listOrg">
+        <section class="create-account padding listOrg">
             <div class="container">
                 <div class="title text-center">
-                    <h5 class="h1">Try npm for free</h5>
+                    <h5 class="h1 title">Try npm for free</h5>
                 </div>
                 <div class="text-center bottom">
                     <a class="btn" href="#">Create an account</a>
@@ -334,7 +344,10 @@
         </section>
         <!-- End create account -->
     </main>
-    <footer>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer class="padding">
         <div class="container">
             <div class="row">
                 <div class="margin col-lg-4">
@@ -375,12 +388,12 @@
             </div>
         </div>
     </footer>
-    <!-- End Content -->
+    <!-- Start Footer -->
+
     <!-- Script Fils -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/min.js"></script>
 </body>
 
